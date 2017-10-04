@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { CookieLawBannerComponent } from './cookie-law-banner/cookie-law-banner.component';
 import { AboutUsComponent } from './static/about-us.component';
+import { RegisterComponent } from './register/register.component';
 
 const appRoutes: Routes = [
   // {
@@ -24,6 +25,10 @@ const appRoutes: Routes = [
   {
     path: 'o-nas',
     component: AboutUsComponent
+  },
+  {
+    path: 'register',
+    component:RegisterComponent
   },
   {
     path: '**',
@@ -40,7 +45,8 @@ const appRoutes: Routes = [
     FooterComponent,
     OffersComponent,
     CookieLawBannerComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
